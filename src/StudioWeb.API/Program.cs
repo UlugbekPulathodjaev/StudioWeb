@@ -1,3 +1,4 @@
+using MediatR;
 using StudioWeb.Application;
 using StudioWeb.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);

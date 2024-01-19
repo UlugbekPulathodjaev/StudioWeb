@@ -20,7 +20,8 @@ namespace StudioWeb.Infrastructure.Migrations
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Budget = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EMail = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

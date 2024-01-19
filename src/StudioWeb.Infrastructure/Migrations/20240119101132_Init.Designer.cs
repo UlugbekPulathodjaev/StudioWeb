@@ -11,7 +11,7 @@ using StudioWeb.Infrastructure.Data;
 namespace StudioWeb.Infrastructure.Migrations
 {
     [DbContext(typeof(BotDbContext))]
-    [Migration("20240118130113_Init")]
+    [Migration("20240119101132_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -50,6 +50,9 @@ namespace StudioWeb.Infrastructure.Migrations
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

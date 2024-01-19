@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudioWeb.Domain.Enums;
 
 namespace StudioWeb.Domain.Entities
 {
@@ -14,6 +15,6 @@ namespace StudioWeb.Domain.Entities
         public string Budget { get; set; }
         public string EMail { get; set; } 
         public string? Comment { get; set; }
-
+        public Status Status {  get; set; }
     }
 }

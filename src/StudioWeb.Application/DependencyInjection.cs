@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using StudioWeb.Application.Customers;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace StudioWeb.Application
 {
@@ -7,7 +8,7 @@ namespace StudioWeb.Application
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;
         }

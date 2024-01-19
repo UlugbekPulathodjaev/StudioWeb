@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StudioWeb.Application.Abstruction;
-using StudioWeb.Application.Customers;
 using StudioWeb.Infrastructure.Data;
 
 namespace StudioWeb.Application
