@@ -13,7 +13,7 @@ namespace StudioWeb.Application
               IConfiguration configuration)
         {
             services.AddDbContext<IApplicationDbContext, BotDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("Default")));
+                options.UseSqlServer(configuration.GetConnectionString("Docker")));
 
             return services;
         }

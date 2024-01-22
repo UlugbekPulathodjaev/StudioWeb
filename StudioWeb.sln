@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioWeb.Application", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioWeb.API", "src\StudioWeb.API\StudioWeb.API.csproj", "{96395DE7-2433-433F-B397-13039EBC0903}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioWeb.TelegramBot", "src\StudioWeb.TelegramBot\StudioWeb.TelegramBot.csproj", "{36BBCBD3-ED47-4788-B61F-B8F92207021A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudioWeb.TelegramBot", "src\StudioWeb.TelegramBot\StudioWeb.TelegramBot.csproj", "{36BBCBD3-ED47-4788-B61F-B8F92207021A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{577A4383-47B5-4220-9321-60A4DE1E4698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT", "src\JWT\JWT.csproj", "{118DFD66-68B6-4AA9-B82A-AF2639E3139C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,14 @@ Global
 		{36BBCBD3-ED47-4788-B61F-B8F92207021A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36BBCBD3-ED47-4788-B61F-B8F92207021A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36BBCBD3-ED47-4788-B61F-B8F92207021A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577A4383-47B5-4220-9321-60A4DE1E4698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577A4383-47B5-4220-9321-60A4DE1E4698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577A4383-47B5-4220-9321-60A4DE1E4698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577A4383-47B5-4220-9321-60A4DE1E4698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118DFD66-68B6-4AA9-B82A-AF2639E3139C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118DFD66-68B6-4AA9-B82A-AF2639E3139C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118DFD66-68B6-4AA9-B82A-AF2639E3139C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118DFD66-68B6-4AA9-B82A-AF2639E3139C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +63,7 @@ Global
 		{60563D62-1CCA-4A93-A84B-B91B037FC33D} = {2BCA1019-FA56-4F32-B475-D719BAA367FD}
 		{96395DE7-2433-433F-B397-13039EBC0903} = {2BCA1019-FA56-4F32-B475-D719BAA367FD}
 		{36BBCBD3-ED47-4788-B61F-B8F92207021A} = {2BCA1019-FA56-4F32-B475-D719BAA367FD}
+		{118DFD66-68B6-4AA9-B82A-AF2639E3139C} = {2BCA1019-FA56-4F32-B475-D719BAA367FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56B23475-CE7C-4942-A98D-D01A2A9AA81B}

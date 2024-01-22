@@ -19,7 +19,7 @@ namespace StudioWeb.API.Controllers
         }
         [HttpPost]
         public async ValueTask<IActionResult> CreateAsync(CreateCustomerCommand command)
-        {
+         {
             var result= await mediator.Send(command);
             return Ok(result);
         }

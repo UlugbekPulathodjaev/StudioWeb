@@ -11,15 +11,15 @@ using StudioWeb.Infrastructure.Data;
 namespace StudioWeb.Infrastructure.Migrations
 {
     [DbContext(typeof(BotDbContext))]
-    [Migration("20240119101132_Init")]
-    partial class Init
+    [Migration("20240121101016_initialmigrat")]
+    partial class initialmigrat
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -37,7 +37,8 @@ namespace StudioWeb.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Comment")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("EMail")
                         .IsRequired()
@@ -45,7 +46,8 @@ namespace StudioWeb.Infrastructure.Migrations
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
