@@ -60,3 +60,952 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2024-01-23 14:26:00.623 +00:00 [DBG] The connection queue processing loop for 0HN0S3SKB3ASU completed.
 2024-01-23 14:26:00.783 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-01-23 14:26:00.962 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" stopped.
+2024-01-23 14:49:22.191 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-01-23 14:49:25.533 +00:00 [DBG] Hosting starting
+2024-01-23 14:49:25.753 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2024-01-23 14:49:26.042 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2024-01-23 14:49:26.307 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2024-01-23 14:49:26.503 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2024-01-23 14:49:27.074 +00:00 [INF] Creating key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} with creation date 2024-01-23 14:49:27Z, activation date 2024-01-23 14:49:26Z, and expiration date 2024-04-22 14:49:26Z.
+2024-01-23 14:49:27.241 +00:00 [DBG] Descriptor deserializer type for key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2024-01-23 14:49:27.388 +00:00 [DBG] No key escrow sink found. Not writing key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} to escrow.
+2024-01-23 14:49:27.538 +00:00 [WRN] No XML encryptor configured. Key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} may be persisted to storage in unencrypted form.
+2024-01-23 14:49:27.683 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2024-01-23 14:49:27.892 +00:00 [DBG] Found key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706}.
+2024-01-23 14:49:28.063 +00:00 [DBG] Considering key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} with expiration date 2024-04-22 14:49:26Z as default key.
+2024-01-23 14:49:28.238 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-01-23 14:49:28.451 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-01-23 14:49:28.612 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-01-23 14:49:28.755 +00:00 [DBG] Using key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} as the default key.
+2024-01-23 14:49:28.918 +00:00 [DBG] Key ring with default key {f27e6e7b-afcd-4fb8-b3d9-c7d7fca28706} was loaded during application startup.
+2024-01-23 14:49:29.192 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 552746104510EE12479ED4B8F43CCF704190DC25)
+2024-01-23 14:49:29.440 +00:00 [INF] Now listening on: http://[::]:8080
+2024-01-23 14:49:29.618 +00:00 [INF] Now listening on: https://[::]:8081
+2024-01-23 14:49:29.774 +00:00 [DBG] Loaded hosting startup assembly StudioWeb.API
+2024-01-23 14:49:29.930 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 14:49:30.111 +00:00 [INF] Hosting environment: Development
+2024-01-23 14:49:30.303 +00:00 [INF] Content root path: /app
+2024-01-23 14:49:30.501 +00:00 [DBG] Hosting started
+2024-01-23 14:49:31.920 +00:00 [DBG] Connection id "0HN0S4A13NORA" accepted.
+2024-01-23 14:49:32.155 +00:00 [DBG] Connection id "0HN0S4A13NORA" started.
+2024-01-23 14:49:32.585 +00:00 [DBG] Connection 0HN0S4A13NORA established using the following protocol: "Tls13"
+2024-01-23 14:49:32.936 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/swagger/index.html - null null
+2024-01-23 14:49:33.180 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-01-23 14:49:33.459 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-01-23 14:49:33.683 +00:00 [DBG] Request did not match any endpoints
+2024-01-23 14:49:34.107 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/swagger/index.html - 200 null text/html;charset=utf-8 1171.5913ms
+2024-01-23 14:49:37.034 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/swagger/v1/swagger.json - null null
+2024-01-23 14:49:37.263 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-01-23 14:49:37.452 +00:00 [DBG] Request did not match any endpoints
+2024-01-23 14:49:37.889 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 854.9987ms
+2024-01-23 14:49:42.403 +00:00 [DBG] Connection id "0HN0S4A13NORA" received FIN.
+2024-01-23 14:49:42.649 +00:00 [DBG] Connection id "0HN0S4A13NORA" is closed. The last processed stream ID was 3.
+2024-01-23 14:49:42.673 +00:00 [DBG] The connection queue processing loop for 0HN0S4A13NORA completed.
+2024-01-23 14:49:42.918 +00:00 [DBG] Connection id "0HN0S4A13NORA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:49:43.395 +00:00 [DBG] Connection id "0HN0S4A13NORA" stopped.
+2024-01-23 14:49:48.285 +00:00 [DBG] Connection id "0HN0S4A13NORB" accepted.
+2024-01-23 14:49:48.453 +00:00 [DBG] Connection id "0HN0S4A13NORB" started.
+2024-01-23 14:49:48.674 +00:00 [DBG] Connection 0HN0S4A13NORB established using the following protocol: "Tls13"
+2024-01-23 14:49:48.908 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - null null
+2024-01-23 14:49:49.259 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:49:49.421 +00:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-01-23 14:49:49.584 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:49:49.783 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:49:50.027 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:49:50.239 +00:00 [DBG] The request is a preflight request.
+2024-01-23 14:49:50.503 +00:00 [INF] Request starting HTTP/2 POST https://localhost:81/api/Customer/Create - application/json 108
+2024-01-23 14:49:50.477 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - 204 null null 1569.7284ms
+2024-01-23 14:49:50.767 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:49:51.005 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-23 14:49:51.228 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:49:51.913 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:49:52.144 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:49:52.424 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:49:52.744 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:49:52.924 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:49:53.094 +00:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAsync(StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand) on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 14:49:53.273 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 14:49:53.492 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 14:49:53.668 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 14:49:53.834 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 14:49:53.980 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 14:49:54.141 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:49:54.314 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:49:54.462 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:49:54.606 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' using the name '' in request data ...
+2024-01-23 14:49:54.815 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-23 14:49:54.972 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:00000003": started reading request body.
+2024-01-23 14:49:55.157 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:00000003": done reading request body.
+2024-01-23 14:49:55.333 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'
+2024-01-23 14:49:55.567 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:49:55.803 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:49:56.072 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:49:56.309 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:49:56.819 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-01-23 14:49:57.444 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 14:49:57.727 +00:00 [DBG] Creating DbConnection.
+2024-01-23 14:49:58.081 +00:00 [DBG] Created DbConnection. (351ms).
+2024-01-23 14:49:58.360 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:49:59.292 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:49:59.888 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:00.085 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:00.303 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (218ms).
+2024-01-23 14:50:00.485 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (400ms).
+2024-01-23 14:50:00.648 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:00.857 +00:00 [INF] Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:01.039 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:01.269 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (226ms).
+2024-01-23 14:50:01.427 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:50:01.619 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (191ms).
+2024-01-23 14:50:01.768 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (340ms).
+2024-01-23 14:50:01.919 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:02.090 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:02.279 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:02.581 +00:00 [INF] Executed DbCommand (295ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:02.651 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - null null
+2024-01-23 14:50:02.834 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:02.947 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:50:03.137 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (302ms).
+2024-01-23 14:50:03.185 +00:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-01-23 14:50:03.404 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:03.450 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:50:03.652 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:03.703 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:50:03.901 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:03.962 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:50:04.175 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (273ms).
+2024-01-23 14:50:04.223 +00:00 [DBG] The request is a preflight request.
+2024-01-23 14:50:04.435 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (533ms).
+2024-01-23 14:50:04.511 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - 204 null null 1860.1465ms
+2024-01-23 14:50:04.537 +00:00 [INF] Request starting HTTP/2 POST https://localhost:81/api/Customer/Create - application/json 108
+2024-01-23 14:50:04.736 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:04.956 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:50:04.995 +00:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:05.141 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-23 14:50:05.260 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:05.327 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:50:05.470 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (209ms).
+2024-01-23 14:50:05.522 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:50:05.654 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:50:05.723 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:50:05.846 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (192ms).
+2024-01-23 14:50:05.909 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:50:06.157 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (503ms).
+2024-01-23 14:50:06.183 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:50:06.539 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:06.765 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:50:06.869 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:06.997 +00:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAsync(StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand) on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 14:50:07.102 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:07.272 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 14:50:07.321 +00:00 [INF] Executed DbCommand (216ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:07.502 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 14:50:07.566 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:07.707 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 14:50:07.779 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (213ms).
+2024-01-23 14:50:07.915 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 14:50:08.020 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:11.244 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 14:50:11.252 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:11.434 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:50:11.490 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:50:11.628 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:50:11.668 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (178ms).
+2024-01-23 14:50:11.845 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:50:11.948 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (457ms).
+2024-01-23 14:50:12.040 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' using the name '' in request data ...
+2024-01-23 14:50:12.170 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:50:12.221 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-23 14:50:12.404 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:00000007": started reading request body.
+2024-01-23 14:50:12.504 +00:00 [INF] Executed DbCommand (333ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:50:12.557 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:00000007": done reading request body.
+2024-01-23 14:50:12.671 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:12.732 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'
+2024-01-23 14:50:12.818 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 147ms reading results.
+2024-01-23 14:50:12.908 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:13.016 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:13.117 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:13.209 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (192ms).
+2024-01-23 14:50:13.311 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:50:13.402 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 14:50:13.504 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:13.680 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 14:50:13.924 +00:00 [DBG] Creating DbConnection.
+2024-01-23 14:50:14.069 +00:00 [DBG] Created DbConnection. (145ms).
+2024-01-23 14:50:14.268 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:14.481 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:17.837 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:25.177 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:19.186 +00:00 [DBG] 'BotDbContext' generated a temporary value for the property 'Customer.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:28.268 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3090ms).
+2024-01-23 14:50:28.333 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:28.435 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3257ms).
+2024-01-23 14:50:28.561 +00:00 [DBG] SaveChanges starting for 'BotDbContext'.
+2024-01-23 14:50:28.607 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:28.731 +00:00 [DBG] DetectChanges starting for 'BotDbContext'.
+2024-01-23 14:50:28.804 +00:00 [INF] Executed DbCommand (194ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:28.896 +00:00 [DBG] DetectChanges completed for 'BotDbContext'.
+2024-01-23 14:50:28.955 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:29.135 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (179ms).
+2024-01-23 14:50:29.129 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:29.288 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:50:29.365 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:29.433 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (145ms).
+2024-01-23 14:50:29.522 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:50:29.598 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (310ms).
+2024-01-23 14:50:29.669 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (146ms).
+2024-01-23 14:50:29.772 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:29.457 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - null null
+2024-01-23 14:50:29.904 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (381ms).
+2024-01-23 14:50:29.968 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:50:29.976 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:30.067 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:50:30.116 +00:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-01-23 14:50:30.191 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:30.314 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:50:30.376 +00:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:30.437 +00:00 [INF] Executed DbCommand (371ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:50:30.490 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:50:30.548 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:30.666 +00:00 [DBG] The foreign key property 'Customer.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-01-23 14:50:30.790 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:50:30.873 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (324ms).
+2024-01-23 14:50:30.972 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:30.993 +00:00 [DBG] The request is a preflight request.
+2024-01-23 14:50:31.020 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:31.161 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 515ms reading results.
+2024-01-23 14:50:31.203 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - 204 null null 1746.4429ms
+2024-01-23 14:50:31.213 +00:00 [INF] Request starting HTTP/2 POST https://localhost:81/api/Customer/Create - application/json 108
+2024-01-23 14:50:31.274 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:31.383 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:31.469 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:50:31.624 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:31.664 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (280ms).
+2024-01-23 14:50:31.757 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-23 14:50:31.832 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (208ms).
+2024-01-23 14:50:31.939 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:50:32.029 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (405ms).
+2024-01-23 14:50:32.187 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:50:32.199 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:31.902 +00:00 [DBG] An entity of type 'Customer' tracked by 'BotDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:32.367 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:50:32.429 +00:00 [INF] Executed DbCommand (226ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:35.660 +00:00 [DBG] SaveChanges completed for 'BotDbContext' with 1 entities written to the database.
+2024-01-23 14:50:35.684 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:50:35.727 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:35.913 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:50:35.949 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (222ms).
+2024-01-23 14:50:36.141 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:50:36.238 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:50:36.375 +00:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAsync(StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand) on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 14:50:36.485 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (247ms).
+2024-01-23 14:50:36.605 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 14:50:36.682 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (443ms).
+2024-01-23 14:50:36.762 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 14:50:36.794 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 14:50:36.855 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:36.905 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 14:50:36.950 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 14:50:37.008 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:37.045 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 14:50:37.099 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 14:50:37.168 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:37.277 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 14:50:37.280 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 14:50:37.346 +00:00 [INF] Executed DbCommand (175ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:37.422 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:50:37.467 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 14:50:37.504 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:37.590 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:50:37.640 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-01-23 14:50:37.753 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:50:37.680 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (176ms).
+2024-01-23 14:50:41.032 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' using the name '' in request data ...
+2024-01-23 14:50:40.975 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API) in 46831.5862ms
+2024-01-23 14:50:41.060 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:41.307 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:41.273 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:50:41.268 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-23 14:50:41.698 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 14:50:41.668 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:0000000B": started reading request body.
+2024-01-23 14:50:41.664 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:50:42.053 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (389ms).
+2024-01-23 14:50:42.053 +00:00 [DBG] Connection id "0HN0S4A13NORB", Request id "0HN0S4A13NORB:0000000B": done reading request body.
+2024-01-23 14:50:42.063 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:42.355 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (690ms).
+2024-01-23 14:50:42.397 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'
+2024-01-23 14:50:42.463 +00:00 [DBG] Disposed connection to database '' on server '' (400ms).
+2024-01-23 14:50:42.640 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:50:42.722 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:42.911 +00:00 [INF] Executed DbCommand (268ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:50:42.759 +00:00 [INF] Request finished HTTP/2 POST https://localhost:81/api/Customer/Create - 200 null application/json; charset=utf-8 52255.804ms
+2024-01-23 14:50:42.943 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:43.112 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:43.172 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:50:43.314 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 203ms reading results.
+2024-01-23 14:50:43.357 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:50:43.481 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:43.561 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 14:50:43.660 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (178ms).
+2024-01-23 14:50:43.755 +00:00 [DBG] Creating DbConnection.
+2024-01-23 14:50:43.829 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 14:50:43.932 +00:00 [DBG] Created DbConnection. (177ms).
+2024-01-23 14:50:44.069 +00:00 [DBG] 'BotDbContext' generated a temporary value for the property 'Customer.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:44.087 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:44.313 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:44.313 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:44.523 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:44.528 +00:00 [DBG] SaveChanges starting for 'BotDbContext'.
+2024-01-23 14:50:44.757 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:44.764 +00:00 [DBG] DetectChanges starting for 'BotDbContext'.
+2024-01-23 14:50:44.943 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (186ms).
+2024-01-23 14:50:44.952 +00:00 [DBG] DetectChanges completed for 'BotDbContext'.
+2024-01-23 14:50:45.172 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:45.165 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (408ms).
+2024-01-23 14:50:45.422 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:45.422 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:45.645 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:50:45.721 +00:00 [INF] Executed DbCommand (271ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:50:45.875 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (229ms).
+2024-01-23 14:50:45.930 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:46.085 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (439ms).
+2024-01-23 14:50:46.123 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (193ms).
+2024-01-23 14:50:46.294 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:50:46.331 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:50:46.588 +00:00 [INF] Executed DbCommand (231ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:50:46.612 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (281ms).
+2024-01-23 14:50:46.801 +00:00 [DBG] The foreign key property 'Customer.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-01-23 14:50:46.801 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (470ms).
+2024-01-23 14:50:46.990 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:46.998 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:47.142 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 341ms reading results.
+2024-01-23 14:50:47.173 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:47.344 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:47.416 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:47.518 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (173ms).
+2024-01-23 14:50:47.631 +00:00 [INF] Executed DbCommand (213ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:50:47.779 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:47.725 +00:00 [DBG] An entity of type 'Customer' tracked by 'BotDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:50:47.956 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (176ms).
+2024-01-23 14:50:47.956 +00:00 [DBG] SaveChanges completed for 'BotDbContext' with 1 entities written to the database.
+2024-01-23 14:50:48.192 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:48.357 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:50:48.516 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:50:48.765 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (249ms).
+2024-01-23 14:50:48.954 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (438ms).
+2024-01-23 14:50:48.988 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 14:50:57.392 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:51:00.442 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 14:51:00.466 +00:00 [INF] Executed DbCommand (3,051ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:51:00.589 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 14:51:00.630 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:00.754 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 14:51:00.782 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (151ms).
+2024-01-23 14:51:00.891 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 14:51:00.928 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:51:01.058 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-01-23 14:51:01.139 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (210ms).
+2024-01-23 14:51:01.247 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API) in 49813.292ms
+2024-01-23 14:51:01.335 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (407ms).
+2024-01-23 14:51:01.390 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:51:01.470 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:01.566 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 14:51:01.614 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:01.703 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:01.749 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:51:01.845 +00:00 [DBG] Disposed connection to database '' on server '' (141ms).
+2024-01-23 14:51:01.895 +00:00 [INF] Executed DbCommand (144ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:51:02.043 +00:00 [INF] Request finished HTTP/2 POST https://localhost:81/api/Customer/Create - 200 null application/json; charset=utf-8 57506.1535ms
+2024-01-23 14:51:02.116 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:02.268 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (152ms).
+2024-01-23 14:51:02.428 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:02.650 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:02.809 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:51:02.999 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (190ms).
+2024-01-23 14:51:03.176 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (366ms).
+2024-01-23 14:51:03.382 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:51:03.604 +00:00 [INF] Executed DbCommand (219ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:51:03.793 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:04.044 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 250ms reading results.
+2024-01-23 14:51:04.227 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:04.423 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (196ms).
+2024-01-23 14:51:04.606 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 14:51:04.824 +00:00 [DBG] 'BotDbContext' generated a temporary value for the property 'Customer.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:51:05.045 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:51:05.266 +00:00 [DBG] SaveChanges starting for 'BotDbContext'.
+2024-01-23 14:51:05.583 +00:00 [DBG] DetectChanges starting for 'BotDbContext'.
+2024-01-23 14:51:05.873 +00:00 [DBG] DetectChanges completed for 'BotDbContext'.
+2024-01-23 14:51:06.124 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:06.368 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:06.666 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:51:07.042 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (375ms).
+2024-01-23 14:51:07.276 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (610ms).
+2024-01-23 14:51:07.455 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:51:07.731 +00:00 [INF] Executed DbCommand (252ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:51:07.923 +00:00 [DBG] The foreign key property 'Customer.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-01-23 14:51:08.091 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:08.263 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 340ms reading results.
+2024-01-23 14:51:08.424 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:08.573 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (148ms).
+2024-01-23 14:51:08.704 +00:00 [DBG] An entity of type 'Customer' tracked by 'BotDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:51:08.844 +00:00 [DBG] SaveChanges completed for 'BotDbContext' with 1 entities written to the database.
+2024-01-23 14:51:09.395 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 14:51:09.559 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 14:51:09.705 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 14:51:09.841 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 14:51:09.982 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 14:51:10.149 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-01-23 14:51:10.404 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API) in 32982.1157ms
+2024-01-23 14:51:10.586 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:51:10.734 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 14:51:10.895 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:51:11.054 +00:00 [DBG] Disposed connection to database '' on server '' (158ms).
+2024-01-23 14:51:11.268 +00:00 [INF] Request finished HTTP/2 POST https://localhost:81/api/Customer/Create - 200 null application/json; charset=utf-8 40054.87ms
+2024-01-23 14:51:12.391 +00:00 [DBG] Connection id "0HN0S4A13NORB" received FIN.
+2024-01-23 14:51:12.777 +00:00 [DBG] Connection id "0HN0S4A13NORB" is closed. The last processed stream ID was 11.
+2024-01-23 14:51:12.777 +00:00 [DBG] Connection id "0HN0S4A13NORB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:51:13.351 +00:00 [DBG] The connection queue processing loop for 0HN0S4A13NORB completed.
+2024-01-23 14:51:13.567 +00:00 [DBG] Connection id "0HN0S4A13NORB" stopped.
+2024-01-23 14:56:46.037 +00:00 [DBG] Connection id "0HN0S4A13NORC" accepted.
+2024-01-23 14:56:47.009 +00:00 [DBG] Connection id "0HN0S4A13NORC" started.
+2024-01-23 14:56:47.202 +00:00 [DBG] Connection 0HN0S4A13NORC established using the following protocol: "Tls13"
+2024-01-23 14:56:47.534 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - null null
+2024-01-23 14:56:47.786 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:56:48.106 +00:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-01-23 14:56:48.426 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:57:03.801 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:57:04.458 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:57:04.765 +00:00 [DBG] The request is a preflight request.
+2024-01-23 14:57:05.053 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - 204 null null 17523.4101ms
+2024-01-23 14:57:05.121 +00:00 [INF] Request starting HTTP/2 POST https://localhost:81/api/Customer/Create - application/json 103
+2024-01-23 14:57:05.750 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:57:06.045 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-23 14:57:06.265 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:57:06.492 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:57:06.751 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:57:07.020 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:57:07.316 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:57:07.590 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:57:07.804 +00:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAsync(StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand) on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 14:57:07.965 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 14:57:08.103 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 14:57:08.324 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 14:57:08.535 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 14:57:08.695 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 14:57:08.857 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:57:09.046 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:57:09.264 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:57:09.421 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' using the name '' in request data ...
+2024-01-23 14:57:09.646 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-23 14:57:09.897 +00:00 [DBG] Connection id "0HN0S4A13NORC", Request id "0HN0S4A13NORC:00000003": started reading request body.
+2024-01-23 14:57:10.071 +00:00 [DBG] Connection id "0HN0S4A13NORC", Request id "0HN0S4A13NORC:00000003": done reading request body.
+2024-01-23 14:57:10.281 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'
+2024-01-23 14:57:10.489 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:57:10.680 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:57:10.836 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:57:11.028 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:57:11.241 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 14:57:11.480 +00:00 [DBG] Creating DbConnection.
+2024-01-23 14:57:11.647 +00:00 [DBG] Created DbConnection. (167ms).
+2024-01-23 14:57:11.861 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:12.077 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:12.399 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:12.644 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:57:12.851 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (206ms).
+2024-01-23 14:57:13.064 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (420ms).
+2024-01-23 14:57:13.390 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:57:13.648 +00:00 [INF] Executed DbCommand (256ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:57:13.865 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:14.099 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (234ms).
+2024-01-23 14:57:14.443 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:57:14.750 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (306ms).
+2024-01-23 14:57:15.022 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (578ms).
+2024-01-23 14:57:15.369 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:15.578 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:15.793 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:57:16.006 +00:00 [INF] Executed DbCommand (211ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:57:16.184 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:16.332 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (148ms).
+2024-01-23 14:57:16.518 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:16.714 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:16.872 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:57:17.018 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (146ms).
+2024-01-23 14:57:17.221 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (349ms).
+2024-01-23 14:57:17.420 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:57:17.628 +00:00 [INF] Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:57:17.929 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:18.132 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (202ms).
+2024-01-23 14:57:18.314 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:57:18.471 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (156ms).
+2024-01-23 14:57:18.708 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (393ms).
+2024-01-23 14:57:18.919 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:19.173 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:19.496 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:57:19.751 +00:00 [INF] Executed DbCommand (253ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:57:20.090 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:20.390 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (299ms).
+2024-01-23 14:57:20.697 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:20.941 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:21.283 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:57:21.522 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (239ms).
+2024-01-23 14:57:21.959 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (676ms).
+2024-01-23 14:57:22.216 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:57:22.589 +00:00 [INF] Executed DbCommand (364ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:57:22.828 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:23.000 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 171ms reading results.
+2024-01-23 14:57:23.258 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:23.521 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (262ms).
+2024-01-23 14:57:23.667 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 14:57:23.825 +00:00 [DBG] 'BotDbContext' generated a temporary value for the property 'Customer.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:57:24.037 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:57:24.250 +00:00 [DBG] SaveChanges starting for 'BotDbContext'.
+2024-01-23 14:57:24.466 +00:00 [DBG] DetectChanges starting for 'BotDbContext'.
+2024-01-23 14:57:24.677 +00:00 [DBG] DetectChanges completed for 'BotDbContext'.
+2024-01-23 14:57:24.865 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:25.034 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:25.207 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:57:25.416 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (209ms).
+2024-01-23 14:57:25.614 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (407ms).
+2024-01-23 14:57:25.790 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:57:26.013 +00:00 [INF] Executed DbCommand (221ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:57:26.253 +00:00 [DBG] The foreign key property 'Customer.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-01-23 14:57:26.496 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:26.753 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 500ms reading results.
+2024-01-23 14:57:26.975 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:27.243 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (269ms).
+2024-01-23 14:57:27.522 +00:00 [DBG] An entity of type 'Customer' tracked by 'BotDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:57:27.788 +00:00 [DBG] SaveChanges completed for 'BotDbContext' with 1 entities written to the database.
+2024-01-23 14:57:28.468 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 14:57:28.790 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 14:57:28.992 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 14:57:29.172 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 14:57:29.338 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 14:57:29.488 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-01-23 14:57:29.683 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API) in 20827.4819ms
+2024-01-23 14:57:29.939 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:57:30.161 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 14:57:30.296 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:57:30.493 +00:00 [DBG] Disposed connection to database '' on server '' (196ms).
+2024-01-23 14:57:30.662 +00:00 [INF] Request finished HTTP/2 POST https://localhost:81/api/Customer/Create - 200 null application/json; charset=utf-8 25542.3074ms
+2024-01-23 14:57:37.802 +00:00 [DBG] Connection id "0HN0S4A13NORC" received FIN.
+2024-01-23 14:57:38.074 +00:00 [DBG] Connection id "0HN0S4A13NORC" is closed. The last processed stream ID was 3.
+2024-01-23 14:57:38.095 +00:00 [DBG] The connection queue processing loop for 0HN0S4A13NORC completed.
+2024-01-23 14:57:38.419 +00:00 [DBG] Connection id "0HN0S4A13NORC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:57:38.697 +00:00 [DBG] Connection id "0HN0S4A13NORC" stopped.
+2024-01-23 14:58:52.691 +00:00 [DBG] Connection id "0HN0S4A13NORD" accepted.
+2024-01-23 14:58:53.466 +00:00 [DBG] Connection id "0HN0S4A13NORD" started.
+2024-01-23 14:58:53.717 +00:00 [DBG] Connection 0HN0S4A13NORD established using the following protocol: "Tls13"
+2024-01-23 14:58:53.977 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - null null
+2024-01-23 14:58:54.281 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:58:54.485 +00:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-01-23 14:58:54.713 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:58:54.874 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:58:55.134 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:58:55.329 +00:00 [DBG] The request is a preflight request.
+2024-01-23 14:58:55.566 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:81/api/Customer/Create - 204 null null 1590.1834ms
+2024-01-23 14:58:55.592 +00:00 [INF] Request starting HTTP/2 POST https://localhost:81/api/Customer/Create - application/json 103
+2024-01-23 14:58:55.943 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-23 14:58:56.127 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-23 14:58:56.302 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:58:56.486 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:58:56.691 +00:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-01-23 14:58:56.899 +00:00 [INF] CORS policy execution successful.
+2024-01-23 14:58:57.153 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:58:57.593 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:58:57.846 +00:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAsync(StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand) on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 14:58:58.156 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 14:58:58.458 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 14:58:58.759 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 14:58:58.994 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 14:58:59.222 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 14:58:59.372 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:58:59.568 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 14:58:59.739 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:58:59.900 +00:00 [DBG] Attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' using the name '' in request data ...
+2024-01-23 14:59:00.044 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-23 14:59:00.194 +00:00 [DBG] Connection id "0HN0S4A13NORD", Request id "0HN0S4A13NORD:00000003": started reading request body.
+2024-01-23 14:59:00.335 +00:00 [DBG] Connection id "0HN0S4A13NORD", Request id "0HN0S4A13NORD:00000003": done reading request body.
+2024-01-23 14:59:00.483 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'
+2024-01-23 14:59:00.623 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:59:00.830 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:59:01.035 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand' ...
+2024-01-23 14:59:01.235 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'StudioWeb.Application.UseCases.Customers.Commands.CreateCustomerCommand'.
+2024-01-23 14:59:01.418 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 14:59:01.592 +00:00 [DBG] Creating DbConnection.
+2024-01-23 14:59:01.771 +00:00 [DBG] Created DbConnection. (178ms).
+2024-01-23 14:59:01.985 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:02.168 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:02.340 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:02.492 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:59:02.685 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (193ms).
+2024-01-23 14:59:02.890 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (398ms).
+2024-01-23 14:59:03.108 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:59:03.352 +00:00 [INF] Executed DbCommand (240ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:59:03.636 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:03.940 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (304ms).
+2024-01-23 14:59:04.218 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:59:04.484 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (265ms).
+2024-01-23 14:59:04.782 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (564ms).
+2024-01-23 14:59:05.035 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:05.274 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:05.496 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:59:05.731 +00:00 [INF] Executed DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:59:05.905 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:06.089 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (183ms).
+2024-01-23 14:59:06.273 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:06.454 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:06.628 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 14:59:06.879 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (250ms).
+2024-01-23 14:59:07.050 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (421ms).
+2024-01-23 14:59:07.269 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:59:07.576 +00:00 [INF] Executed DbCommand (305ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 14:59:07.819 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:08.096 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (277ms).
+2024-01-23 14:59:08.329 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 14:59:08.589 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (260ms).
+2024-01-23 14:59:08.829 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (500ms).
+2024-01-23 14:59:09.047 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:09.286 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:09.511 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:59:09.783 +00:00 [INF] Executed DbCommand (270ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 14:59:10.053 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:10.319 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (266ms).
+2024-01-23 14:59:10.561 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:10.820 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:11.041 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:59:11.302 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (261ms).
+2024-01-23 14:59:11.541 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (499ms).
+2024-01-23 14:59:11.737 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:59:11.961 +00:00 [INF] Executed DbCommand (223ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 14:59:12.131 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:12.290 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 159ms reading results.
+2024-01-23 14:59:12.435 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:12.592 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (156ms).
+2024-01-23 14:59:12.788 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 14:59:13.031 +00:00 [DBG] 'BotDbContext' generated a temporary value for the property 'Customer.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:59:13.264 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:59:13.535 +00:00 [DBG] SaveChanges starting for 'BotDbContext'.
+2024-01-23 14:59:13.809 +00:00 [DBG] DetectChanges starting for 'BotDbContext'.
+2024-01-23 14:59:14.050 +00:00 [DBG] DetectChanges completed for 'BotDbContext'.
+2024-01-23 14:59:14.364 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:14.692 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:15.000 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 14:59:15.306 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (306ms).
+2024-01-23 14:59:15.601 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (601ms).
+2024-01-23 14:59:15.864 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:59:24.235 +00:00 [INF] Executed DbCommand (8,370ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 250), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Budget], [Comment], [EMail], [FullName], [PhoneNumber], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-01-23 14:59:24.402 +00:00 [DBG] The foreign key property 'Customer.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-01-23 14:59:24.575 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:24.731 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 329ms reading results.
+2024-01-23 14:59:24.883 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:25.043 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (160ms).
+2024-01-23 14:59:25.169 +00:00 [DBG] An entity of type 'Customer' tracked by 'BotDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 14:59:25.317 +00:00 [DBG] SaveChanges completed for 'BotDbContext' with 1 entities written to the database.
+2024-01-23 14:59:26.384 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 14:59:26.533 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 14:59:26.691 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 14:59:26.852 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 14:59:26.992 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 14:59:27.132 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-01-23 14:59:27.321 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API) in 27949.396ms
+2024-01-23 14:59:27.506 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.CreateAsync (StudioWeb.API)'
+2024-01-23 14:59:27.652 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 14:59:27.806 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 14:59:27.845 +00:00 [DBG] Connection id "0HN0S4A13NORD" received FIN.
+2024-01-23 14:59:27.993 +00:00 [DBG] Disposed connection to database '' on server '' (183ms).
+2024-01-23 14:59:28.201 +00:00 [DBG] Connection id "0HN0S4A13NORD" is closed. The last processed stream ID was 3.
+2024-01-23 14:59:28.474 +00:00 [DBG] Connection id "0HN0S4A13NORD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:59:28.374 +00:00 [INF] Request finished HTTP/2 POST https://localhost:81/api/Customer/Create - 200 null application/json; charset=utf-8 32781.9136ms
+2024-01-23 14:59:28.670 +00:00 [DBG] The connection queue processing loop for 0HN0S4A13NORD completed.
+2024-01-23 14:59:28.918 +00:00 [DBG] Connection id "0HN0S4A13NORD" stopped.
+2024-01-23 15:10:12.859 +00:00 [DBG] Connection id "0HN0S4A13NORE" accepted.
+2024-01-23 15:10:13.606 +00:00 [DBG] Connection id "0HN0S4A13NORE" started.
+2024-01-23 15:10:13.793 +00:00 [DBG] Connection 0HN0S4A13NORE established using the following protocol: "Tls13"
+2024-01-23 15:10:14.089 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/api/Customer/GetAll - null null
+2024-01-23 15:10:14.301 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/GetAll'
+2024-01-23 15:10:14.466 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)' with route pattern 'api/Customer/GetAll' is valid for the request path '/api/Customer/GetAll'
+2024-01-23 15:10:14.728 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)'
+2024-01-23 15:10:14.885 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 15:10:15.160 +00:00 [DBG] Successfully validated the token.
+2024-01-23 15:10:15.342 +00:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-01-23 15:10:15.651 +00:00 [DBG] Authorization was successful.
+2024-01-23 15:10:16.016 +00:00 [INF] Executing endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)'
+2024-01-23 15:10:16.345 +00:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.ValueTask`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API).
+2024-01-23 15:10:16.544 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-23 15:10:16.790 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-23 15:10:17.000 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-23 15:10:17.257 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-23 15:10:17.508 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-23 15:10:17.793 +00:00 [DBG] Executing controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 15:10:18.058 +00:00 [DBG] Executed controller factory for controller StudioWeb.API.Controllers.CustomerController (StudioWeb.API)
+2024-01-23 15:10:18.395 +00:00 [DBG] Entity Framework Core 8.0.0 initialized 'BotDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-23 15:10:18.620 +00:00 [DBG] Creating DbConnection.
+2024-01-23 15:10:18.861 +00:00 [DBG] Created DbConnection. (241ms).
+2024-01-23 15:10:19.099 +00:00 [DBG] Migrating using database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:19.542 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:19.907 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:20.291 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 15:10:20.667 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (376ms).
+2024-01-23 15:10:20.980 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (689ms).
+2024-01-23 15:10:21.698 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 15:10:21.884 +00:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 15:10:22.095 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:22.341 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (245ms).
+2024-01-23 15:10:22.543 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 15:10:22.712 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (169ms).
+2024-01-23 15:10:22.924 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (380ms).
+2024-01-23 15:10:23.207 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:23.475 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:23.718 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 15:10:24.007 +00:00 [INF] Executed DbCommand (287ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 15:10:24.325 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:24.589 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (263ms).
+2024-01-23 15:10:24.842 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:25.130 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:25.367 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-01-23 15:10:25.599 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (232ms).
+2024-01-23 15:10:25.814 +00:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (447ms).
+2024-01-23 15:10:26.001 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 15:10:26.186 +00:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-01-23 15:10:26.374 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:26.626 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (252ms).
+2024-01-23 15:10:26.830 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-01-23 15:10:27.011 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (180ms).
+2024-01-23 15:10:27.256 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (426ms).
+2024-01-23 15:10:27.530 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:27.798 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:28.145 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 15:10:28.598 +00:00 [INF] Executed DbCommand (452ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-01-23 15:10:29.120 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:29.399 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (279ms).
+2024-01-23 15:10:29.678 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:29.919 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:30.168 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 15:10:30.370 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (201ms).
+2024-01-23 15:10:30.513 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (344ms).
+2024-01-23 15:10:30.765 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 15:10:30.915 +00:00 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-01-23 15:10:31.073 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:31.239 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 166ms reading results.
+2024-01-23 15:10:31.390 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:31.563 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (172ms).
+2024-01-23 15:10:31.710 +00:00 [INF] No migrations were applied. The database is already up to date.
+2024-01-23 15:10:31.903 +00:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()'
+2024-01-23 15:10:32.283 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.Budget (string) Required, 1], [Property: Customer.Comment (string) MaxLength(250), 2], [Property: Customer.EMail (string) Required, 3], [Property: Customer.FullName (string) Required MaxLength(100), 4], [Property: Customer.PhoneNumber (string) Required, 5], [Property: Customer.Status (Status) Required, 6] }
+        SELECT c.Id, c.Budget, c.Comment, c.EMail, c.FullName, c.PhoneNumber, c.Status
+        FROM Customers AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    StudioWeb.Infrastructure.Data.BotDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-01-23 15:10:32.481 +00:00 [DBG] Opening connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:32.653 +00:00 [DBG] Opened connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:32.840 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-23 15:10:33.036 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (196ms).
+2024-01-23 15:10:33.247 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (407ms).
+2024-01-23 15:10:33.432 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Budget], [c].[Comment], [c].[EMail], [c].[FullName], [c].[PhoneNumber], [c].[Status]
+FROM [Customers] AS [c]
+2024-01-23 15:10:33.607 +00:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Budget], [c].[Comment], [c].[EMail], [c].[FullName], [c].[PhoneNumber], [c].[Status]
+FROM [Customers] AS [c]
+2024-01-23 15:10:33.760 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:33.942 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:34.142 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:34.316 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:34.477 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:34.653 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:34.856 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:35.016 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:35.234 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:35.427 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:35.596 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:35.847 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.062 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.253 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.459 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.658 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.815 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:36.962 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:37.148 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:37.363 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:43.878 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.070 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.276 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.446 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.621 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.793 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:44.976 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:45.152 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:45.339 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:45.513 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:45.692 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:45.872 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:46.041 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:46.228 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:46.445 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:46.620 +00:00 [DBG] Context 'BotDbContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-23 15:10:46.788 +00:00 [DBG] Closing data reader to 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:46.959 +00:00 [DBG] A data reader for 'StudioWebDb' on server 'sqldata' is being disposed after spending 13208ms reading results.
+2024-01-23 15:10:47.151 +00:00 [DBG] Closing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:47.330 +00:00 [DBG] Closed connection to database 'StudioWebDb' on server 'sqldata' (179ms).
+2024-01-23 15:10:47.506 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-23 15:10:47.664 +00:00 [DBG] No information found on request to perform content negotiation.
+2024-01-23 15:10:47.845 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-23 15:10:48.018 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-23 15:10:48.231 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-23 15:10:48.434 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudioWeb.Domain.Entities.Customer, StudioWeb.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-23 15:10:48.616 +00:00 [INF] Executed action StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API) in 30822.8666ms
+2024-01-23 15:10:48.818 +00:00 [INF] Executed endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)'
+2024-01-23 15:10:49.065 +00:00 [DBG] 'BotDbContext' disposed.
+2024-01-23 15:10:49.246 +00:00 [DBG] Disposing connection to database 'StudioWebDb' on server 'sqldata'.
+2024-01-23 15:10:49.503 +00:00 [DBG] Disposed connection to database '' on server '' (256ms).
+2024-01-23 15:10:49.780 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/api/Customer/GetAll - 200 null application/json; charset=utf-8 35712.4406ms
+2024-01-23 15:10:53.867 +00:00 [DBG] Connection id "0HN0S4A13NORE" received FIN.
+2024-01-23 15:10:54.103 +00:00 [DBG] Connection id "0HN0S4A13NORE" is closed. The last processed stream ID was 1.
+2024-01-23 15:10:54.125 +00:00 [DBG] The connection queue processing loop for 0HN0S4A13NORE completed.
+2024-01-23 15:10:54.276 +00:00 [DBG] Connection id "0HN0S4A13NORE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 15:10:54.573 +00:00 [DBG] Connection id "0HN0S4A13NORE" stopped.
