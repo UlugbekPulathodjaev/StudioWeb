@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudioWeb.Application.UseCases.Customers.Commands;
@@ -23,7 +24,8 @@ namespace StudioWeb.API.Controllers
             var result= await mediator.Send(command);
             return Ok(result);
         }
-
+        
+        [Authorize(Roles = "PPP")]
         [HttpGet]
         public async ValueTask<IActionResult> GetAllAsync()
         {
@@ -31,6 +33,7 @@ namespace StudioWeb.API.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "QQQ")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -63,8 +66,5 @@ namespace StudioWeb.API.Controllers
                 return NotFound();
             }
         }
-
-
-
     }
 }

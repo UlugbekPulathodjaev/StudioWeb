@@ -3,6 +3,7 @@ using JWT.DTOs;
 using JWT.Entities;
 using JWT.Filters;
 using JWT.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
@@ -101,7 +102,7 @@ namespace JWT.Controllers
             return Ok(token);
         }
 
-        [PermissionFilter(permission: "CreateUser")]
+        [Authorize(Roles = "CreateUser")]
         [LoggerFilter]
         [HttpPost]
         public async Task<IActionResult> TestAction([FromBody] string name)

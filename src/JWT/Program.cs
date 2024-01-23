@@ -10,62 +10,90 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyProject", Version = "v1.0.0" });
-    var securitySchema = new OpenApiSecurityScheme
-    {
-        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
-        Reference = new OpenApiReference
-        {
-            Type = ReferenceType.SecurityScheme,
-            Id = "Bearer"
-        }
-    };
-    c.AddSecurityDefinition("Bearer", securitySchema);
-    var securityRequirement = new OpenApiSecurityRequirement
-                {
-                    { securitySchema, new[] { "Bearer" } }
-                };
-    c.AddSecurityRequirement(securityRequirement);
-});
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
+builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(
-        options =>
-        {
-            options.TokenValidationParameters = GetTokenValidationParameters(builder.Configuration);
-
-            options.Events = new JwtBearerEvents
-            {
-                OnAuthenticationFailed = (context) =>
+builder.Services.AddAuthentication("Bearer")
+                .AddJwtBearer(options =>
                 {
-                    if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                     {
-                        context.Response.Headers.Add("IsTokenExpired", "true");
+                        ValidateIssuer = true,
+                        ValidIssuer = "Issuer",
+                        ValidateAudience = true,
+                        ValidAudience = "Audience",
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("My-Chat-App-Key-Sardor-Sohinazarov"))
+                    };
+                });
+
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("V1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "AuthDemo",
+        Description = "Auth Demo Description"
+    });
+
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        Description = "Bearer Authentication",
+        Type = SecuritySchemeType.Http
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme()
+                        {
+                            Reference = new OpenApiReference()
+                            {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        },
+                        new List<string> ()
                     }
-                    return Task.CompletedTask;
-                }
-            };
-        });
+
+                });
+});
+
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//    .AddJwtBearer(
+//        options =>
+//        {
+//            options.TokenValidationParameters = GetTokenValidationParameters(builder.Configuration);
+
+//            options.Events = new JwtBearerEvents
+//            {
+//                OnAuthenticationFailed = (context) =>
+//                {
+//                    if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+//                    {
+//                        context.Response.Headers.Add("IsTokenExpired", "true");
+//                    }
+//                    return Task.CompletedTask;
+//                }
+//            };
+//        });
 
 var app = builder.Build();
 
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/V1/swagger.json", "Auth Demo API");
+    });
 
-
-app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

@@ -55,8 +55,10 @@ namespace JWT.Services
 
             foreach (var role in user.Roles)
             {
-                var rolePermissions = _context.Permissions.Where(x => x.Id == role.Id).Select(x => x.Name).ToList();
-                permissions.AddRange(rolePermissions);
+                var currentRole = _context.Roles.Include(x => x.Permissions).FirstOrDefault(x => x.Id == role.Id);
+                permissions = currentRole.Permissions.Select(x => x.Name).ToList();
+
+                permissions.AddRange(permissions);
             }
 
             var claims = new List<Claim>();
@@ -65,7 +67,7 @@ namespace JWT.Services
 
             foreach (var p in permissions)
             {
-                claims.Add(new Claim("permission", p));
+                claims.Add(new Claim(ClaimTypes.Role, p));
             }
 
             return GenerateJWT(claims);

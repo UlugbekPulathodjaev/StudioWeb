@@ -18,7 +18,7 @@ namespace JWT.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUsersAsync()
         {
-            return Ok(await _context.Users.AsNoTracking().Include(x => x.Roles).ToListAsync());
+            return Ok(await _context.Users.AsNoTracking().Include(x => x.Roles).ThenInclude(x => x.Permissions).ToListAsync());
         }
 
         [HttpPut]

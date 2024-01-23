@@ -1,0 +1,62 @@
+2024-01-23 14:25:18.293 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-01-23 14:25:23.963 +00:00 [DBG] Hosting starting
+2024-01-23 14:25:24.214 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2024-01-23 14:25:24.473 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2024-01-23 14:25:24.706 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2024-01-23 14:25:24.903 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2024-01-23 14:25:25.088 +00:00 [INF] Creating key {2f40021b-b813-4238-bb99-114acc6023d2} with creation date 2024-01-23 14:25:25Z, activation date 2024-01-23 14:25:24Z, and expiration date 2024-04-22 14:25:24Z.
+2024-01-23 14:25:25.382 +00:00 [DBG] Descriptor deserializer type for key {2f40021b-b813-4238-bb99-114acc6023d2} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2024-01-23 14:25:25.582 +00:00 [DBG] No key escrow sink found. Not writing key {2f40021b-b813-4238-bb99-114acc6023d2} to escrow.
+2024-01-23 14:25:26.299 +00:00 [WRN] No XML encryptor configured. Key {2f40021b-b813-4238-bb99-114acc6023d2} may be persisted to storage in unencrypted form.
+2024-01-23 14:25:26.507 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2024-01-23 14:25:26.861 +00:00 [DBG] Found key {2f40021b-b813-4238-bb99-114acc6023d2}.
+2024-01-23 14:25:27.150 +00:00 [DBG] Considering key {2f40021b-b813-4238-bb99-114acc6023d2} with expiration date 2024-04-22 14:25:24Z as default key.
+2024-01-23 14:25:27.459 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-01-23 14:25:27.669 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-01-23 14:25:27.871 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-01-23 14:25:28.085 +00:00 [DBG] Using key {2f40021b-b813-4238-bb99-114acc6023d2} as the default key.
+2024-01-23 14:25:28.314 +00:00 [DBG] Key ring with default key {2f40021b-b813-4238-bb99-114acc6023d2} was loaded during application startup.
+2024-01-23 14:25:28.726 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 552746104510EE12479ED4B8F43CCF704190DC25)
+2024-01-23 14:25:29.040 +00:00 [INF] Now listening on: http://[::]:8080
+2024-01-23 14:25:29.373 +00:00 [INF] Now listening on: https://[::]:8081
+2024-01-23 14:25:29.699 +00:00 [DBG] Loaded hosting startup assembly StudioWeb.API
+2024-01-23 14:25:29.946 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 14:25:30.204 +00:00 [INF] Hosting environment: Development
+2024-01-23 14:25:30.569 +00:00 [INF] Content root path: /app
+2024-01-23 14:25:30.809 +00:00 [DBG] Hosting started
+2024-01-23 14:25:33.207 +00:00 [DBG] Connection id "0HN0S3SKB3AST" accepted.
+2024-01-23 14:25:33.574 +00:00 [DBG] Connection id "0HN0S3SKB3AST" started.
+2024-01-23 14:25:33.990 +00:00 [DBG] Connection 0HN0S3SKB3AST established using the following protocol: "Tls13"
+2024-01-23 14:25:34.670 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/swagger/index.html - null null
+2024-01-23 14:25:35.007 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-01-23 14:25:35.299 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-01-23 14:25:35.492 +00:00 [DBG] Request did not match any endpoints
+2024-01-23 14:25:36.284 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/swagger/index.html - 200 null text/html;charset=utf-8 1618.2131ms
+2024-01-23 14:25:38.294 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/swagger/v1/swagger.json - null null
+2024-01-23 14:25:38.441 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-01-23 14:25:38.640 +00:00 [DBG] Request did not match any endpoints
+2024-01-23 14:25:39.181 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 887.2509ms
+2024-01-23 14:25:40.202 +00:00 [DBG] Connection id "0HN0S3SKB3AST" received FIN.
+2024-01-23 14:25:40.406 +00:00 [DBG] The connection queue processing loop for 0HN0S3SKB3AST completed.
+2024-01-23 14:25:40.434 +00:00 [DBG] Connection id "0HN0S3SKB3AST" is closed. The last processed stream ID was 3.
+2024-01-23 14:25:41.044 +00:00 [DBG] Connection id "0HN0S3SKB3AST" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:25:41.290 +00:00 [DBG] Connection id "0HN0S3SKB3AST" stopped.
+2024-01-23 14:25:51.363 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" accepted.
+2024-01-23 14:25:51.716 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" started.
+2024-01-23 14:25:52.063 +00:00 [DBG] Connection 0HN0S3SKB3ASU established using the following protocol: "Tls13"
+2024-01-23 14:25:52.494 +00:00 [INF] Request starting HTTP/2 GET https://localhost:81/api/Customer/GetAll - null null
+2024-01-23 14:25:53.021 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/GetAll'
+2024-01-23 14:25:53.360 +00:00 [DBG] Endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)' with route pattern 'api/Customer/GetAll' is valid for the request path '/api/Customer/GetAll'
+2024-01-23 14:25:53.664 +00:00 [DBG] Request matched endpoint 'StudioWeb.API.Controllers.CustomerController.GetAllAsync (StudioWeb.API)'
+2024-01-23 14:25:53.843 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-23 14:25:54.203 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-01-23 14:25:54.427 +00:00 [DBG] Policy authentication schemes  did not succeed
+2024-01-23 14:25:54.691 +00:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (PPP)
+2024-01-23 14:25:55.001 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-23 14:25:55.294 +00:00 [INF] Request finished HTTP/2 GET https://localhost:81/api/Customer/GetAll - 401 0 null 2800.4452ms
+2024-01-23 14:26:00.234 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" received FIN.
+2024-01-23 14:26:00.623 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" is closed. The last processed stream ID was 1.
+2024-01-23 14:26:00.623 +00:00 [DBG] The connection queue processing loop for 0HN0S3SKB3ASU completed.
+2024-01-23 14:26:00.783 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-23 14:26:00.962 +00:00 [DBG] Connection id "0HN0S3SKB3ASU" stopped.

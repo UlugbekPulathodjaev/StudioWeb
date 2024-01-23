@@ -1,5 +1,8 @@
 version: '3.4'
 
+networks:
+  backend:
+
 services:
 
   sqldata:
@@ -9,6 +12,8 @@ services:
       environment:
           - SA_PASSWORD=Numsey#2022
           - ACCEPT_EULA=Y
+      networks:
+          - backend
       ports:
           - "1450:1433"
 
@@ -18,7 +23,12 @@ services:
     build:
       context: .
       dockerfile: src/StudioWeb.API/Dockerfile
-
+    environment:
+      - DB_HOST=sqldata
+      - DB_NAME=studioweb
+      - DB_SA_PASSWORD=Numsey#2022
+    networks:
+      - backend
 
 
   JWT:
@@ -26,3 +36,9 @@ services:
     build:
       context: .
       dockerfile: src/JWT/Dockerfile
+    environment:
+      - DB_HOST=sqldata
+      - DB_NAME=jwts
+      - DB_SA_PASSWORD=Numsey#2022
+    networks:
+      - backend
